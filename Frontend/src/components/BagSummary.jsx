@@ -1,4 +1,4 @@
-import Bag from "../routes/bag";
+
 import { bagActions } from "../store/bagSlice";
 import {useDispatch} from "react-redux";
 import { RiDeleteBin6Fill } from "react-icons/ri";
