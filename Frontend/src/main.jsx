@@ -5,7 +5,7 @@ import './index.css'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './routes/Home.jsx';
-import Bag from './routes/bag.jsx';
+import Bag from './routes/Bag.jsx';
 import {Provider} from 'react-redux'
 import eStore from './store/index.js';
 
