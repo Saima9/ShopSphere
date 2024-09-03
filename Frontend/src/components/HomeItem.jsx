@@ -1,6 +1,6 @@
 import { bagActions } from "../store/bagSlice"
 import {useDispatch,useSelector} from "react-redux";
-import BagSummary from "./BagSummary";
+
 
 
 const HomeItem=({item})=>{
