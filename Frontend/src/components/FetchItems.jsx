@@ -18,7 +18,7 @@ const FetchItems=()=>{
    
     dispatch(fetchStatusActions.markFetchingStarted());
     console.log(fetchStatus)
-fetch('http://localhost:8080/items', {signal})
+fetch('https://shop-sphere-j6qdhb0jp-saima9s-projects.vercel.app/items', {signal})
 .then((res) => res.json())
 .then(({items}) => {
     
