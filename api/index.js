@@ -8,7 +8,8 @@ const app = express();
 app.use(cors({
   origin: '*', // Allow requests from your Vercel frontend
   methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed HTTP methods
-  allowedHeaders: ['Content-Type', 'Authorization'] 
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
 }));
 
 app.options('*', cors());  // Handle preflight requests for all routes
