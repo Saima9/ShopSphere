@@ -5,7 +5,11 @@ const cors = require('cors')
 const { getStoredItems, storeItems } = require('./data/items');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: '*', // Allow requests from your Vercel frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed HTTP methods
+  allowedHeaders: ['Content-Type'], 
+}));
 
 app.use(bodyParser.json());
 
