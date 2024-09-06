@@ -6,7 +6,7 @@ const { getStoredItems, storeItems } = require('./data/items');
 
 const app = express();
 app.use(cors({
-  origin: '*', // Allow requests from your Vercel frontend
+  origin: 'https://shop-sphere-fs.vercel.app/', // Allow requests from your Vercel frontend
   methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
@@ -17,7 +17,7 @@ app.options('*', cors());  // Handle preflight requests for all routes
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
-  // res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
