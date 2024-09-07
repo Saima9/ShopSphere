@@ -18,7 +18,10 @@ const FetchItems=()=>{
    
     dispatch(fetchStatusActions.markFetchingStarted());
     console.log(fetchStatus)
-fetch('https://shop-sphere-j6qdhb0jp-saima9s-projects.vercel.app/items', {signal})
+fetch('https://shop-sphere-fs.vercel.app/items', {
+    method: 'GET',              // Specify the HTTP method (GET)
+    signal: signal
+})
 .then((res) => res.json())
 .then(({items}) => {
     

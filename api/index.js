@@ -9,7 +9,6 @@ app.use(cors({
   origin: 'https://shop-sphere-fs.vercel.app/', // Allow requests from your Vercel frontend
   methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed HTTP methods
   allowedHeaders: ['Content-Type'],
-  credentials: true
 }));
 
 app.options('*', cors());  // Handle preflight requests for all routes
