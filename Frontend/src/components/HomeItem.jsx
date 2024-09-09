@@ -15,7 +15,7 @@ const HomeItem=({item})=>{
 
   }
  const  handleremoveToBag=()=>{
-  dispatch(bagActions.removeFromBag())
+  dispatch(bagActions.removeFromBag(item.id))
 
   }
   
