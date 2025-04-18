@@ -8,6 +8,7 @@ import Home from './routes/Home.jsx';
 import Bag from './routes/Bag.jsx';
 import {Provider} from 'react-redux'
 import eStore from './store/index.js';
+import Order from './routes/Order.jsx';
 
 
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   path:"/"  , element:<App/> , children:[
   {path:"/"  , element:<Home/> /*,loader: postLoader*/},
   {path:"/Bag"  , element:<Bag/>/*, action: postAction*/ },
+  {path:"/Order"  , element:<Order/>/*, action: postAction*/ },
 ],
   },
 ])

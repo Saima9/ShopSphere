@@ -1,5 +1,5 @@
-import {useSelector} from "react-redux"
-
+import {useSelector} from "react-redux";
+import {Link} from "react-router-dom";
 
 const BagItem = ()=>{
 
@@ -55,9 +55,9 @@ const BagItem = ()=>{
       <span className="price-item-value">₹{finalPayment}</span>
     </div>
   </div>
-  <button className="btn-place-order">
+  <Link to='/Order'><button className="btn-place-order">
     <div className="css-xjhrni">PLACE ORDER</div>
-  </button>
+  </button></Link>
   
   </div>
     )
